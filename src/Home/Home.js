@@ -18,7 +18,7 @@ const Home = ({ navigation }) => {
                 contentInset={{padding: 12}}
                 renderItem={({item}) =>{
                     return(
-                        <TouchableOpacity style={{padding:15,margin:10, height:windowHeight * 0.2,backgroundColor:item.bgColor, borderRadius:10,position:'relative'}}>
+                        <TouchableOpacity onPress={() => navigation.navigate('Details')} style={{padding:15,margin:10, height:windowHeight * 0.2,backgroundColor:item.bgColor, borderRadius:10,position:'relative'}}>
                            <View style={{backgroundColor: item.bgColor}}>
                            <Image style={{
                                 height: cardHieght * 0.4, width:cardWidth * 1, position:'absolute', right:0,bottom:0,resizeMode:'contain'
